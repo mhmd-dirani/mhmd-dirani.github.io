@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            form {
+                display: flex;
+                flex-direction: column;  
+                align-items: center;
+                gap: 10px;
+            }
+            #search-box {
+                background-color: #f2f2f2;
+                width: 500px;
+                height: 5px;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+            }
+            #search-box input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                background: transparent;
+                border: none;
+                outline: none;
+                display: flex;
+                
+            }
+            #submit-button input[type="submit"] {
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <a style="position: absolute; top: 10px; right: 10px;" href="google_search.html" rel="stylesheet">Google Search</a>
+        <a style="position: absolute; top: 30px; right: 10px;" href="google_advanced_search.html" rel="stylesheet">Google Advanced Search</a>
+       
+        <img  src="Google.png" alt="Google Logo" style="width:400px;">
+        <form action="https://google.com/search">
+            <div id="search-box">
+                <input type="text" name="q" placeholder="Search Google or type a URL">
+                <input type="hidden" name="tbm" value="isch">
+            </div>
+            <div id="submit-button">
+                <input type="submit" value="Google Image Search">
+            </div>
+        </form>
+    </body>
+</html>
